@@ -1,0 +1,81 @@
+/* Reset some default styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Body styles */
+    body {
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      color: #fff;
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Container for content */
+    .container {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    /* Header styles */
+    header {
+      margin-bottom: 2rem;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    /* Call-to-action button styles */
+    .cta-button {
+      background-color: #fff;
+      color: #764ba2;
+      padding: 1rem 2rem;
+      font-size: 1.2rem;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      margin-top: 2rem;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    .cta-button:hover {
+      background-color: #f0f0f0;
+      color: #333;
+    }
+
+    /* Footer styles */
+    footer {
+      padding: 2rem;
+      background-color: rgba(0, 0, 0, 0.2);
+      text-align: center;
+      font-size: 0.9rem;
+    }
+
+    /* Responsive styles */
+    @media(max-width: 768px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      .cta-button {
+        padding: 0.8rem 1.5rem;
+        font-size: 1rem;
+      }
+    }
